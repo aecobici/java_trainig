@@ -1,9 +1,16 @@
-package pageObjects;
+package abstractObjects;
 
 public class Bicycle {
     int cadence = 0;
     int speed = 0;
     int gear = 1;
+
+    //the Bicycle class has one constructor
+
+    public Bicycle(int gear, int speed) {
+        this.gear = gear;
+        this.speed = speed;
+    }
 
     void changeCadence(int newValue) {
         cadence = newValue;
